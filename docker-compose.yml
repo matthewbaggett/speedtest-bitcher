@@ -2,6 +2,7 @@ version: "2"
 
 services:
   bitch:
+    #image: matthewbaggett/speedtest-performance-tweeter
     build: .
     environment:
      - EXPECTED_DOWNLOAD=200
