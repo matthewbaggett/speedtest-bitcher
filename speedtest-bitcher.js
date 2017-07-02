@@ -22,7 +22,6 @@ var send_tweet = function(status){
     twitterClient.post('statuses/update', {status: status},  function(error, tweet, response) {
         if(error) throw error;
         console.log("Sent tweet.");
-        console.log(tweet);  // Tweet body.
     });
 }
 
