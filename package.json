@@ -1,0 +1,25 @@
+{
+  "name": "speedtest-bitcher",
+  "version": "1.0.0",
+  "description": "Automatically tweet at my ISP when my speed test drops below a specified minimum",
+  "main": "speedtest-bitcher.js",
+  "scripts": {
+    "start": "node speedtest-bitcher.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewbaggett/speedtest-bitcher.git"
+  },
+  "author": "Matthew Baggett <matthew@baggett.me>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/matthewbaggett/speedtest-bitcher/issues"
+  },
+  "homepage": "https://github.com/matthewbaggett/speedtest-bitcher#readme",
+  "dependencies": {
+    "phpjs": "^1.3.2",
+    "speedtest-net": "^1.3.1",
+    "twitter": "^1.7.1"
+  }
+}

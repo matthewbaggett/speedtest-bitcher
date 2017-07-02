@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  bitch:
+    build: .
+    environment:
+     - EXPECTED_DOWNLOAD=200
+     - EXPECTED_UPLOAD=20
+     - THRESHOLD=0.9
+     - TWITTER_CONSUMER_KEY=
+     - TWITTER_CONSUMER_SECRET=
+     - TWITTER_ACCESS_TOKEN_KEY=
+     - TWITTER_ACCESS_TOKEN_SECRET=
