@@ -11,6 +11,8 @@ var expected_upload = environment.EXPECTED_UPLOAD;
 
 var threshold = environment.THRESHOLD_PERCENTAGE;
 
+var companyTwitterAccount = environment.COMPANY_TWITTER_ACCOUNT;
+
 var twitterClient = new Twitter({
     consumer_key: environment.TWITTER_CONSUMER_KEY,
     consumer_secret: environment.TWITTER_CONSUMER_SECRET,
@@ -35,11 +37,11 @@ test.on('data', data => {
     console.log("Upload rate is " + data.speeds.upload.toFixed(2) + "Mbps which is " + percentage_upload.toFixed(0) + "% of " + expected_upload + "Mbps.");
     if(percentage_download < threshold){
         // Download is low.
-        send_tweet("@virginmedia My Download rate is " + data.speeds.download.toFixed(2) + "Mbps which is " + percentage_download.toFixed(0) + "% of the " + expected_download + "Mbps I'm paying for.")
+        send_tweet(companyTwitterAccount + " My Download rate is " + data.speeds.download.toFixed(2) + "Mbps which is " + percentage_download.toFixed(0) + "% of the " + expected_download + "Mbps I'm paying for.")
     }
     if(percentage_upload < threshold){
         // Upload is low.
-        send_tweet("@virginmedia My Upload rate is " + data.speeds.upload.toFixed(2) + "Mbps which is " + percentage_upload.toFixed(0) + "% of the " + expected_upload + "Mbps I'm paying for.")
+        send_tweet(companyTwitterAccount + " My Upload rate is " + data.speeds.upload.toFixed(2) + "Mbps which is " + percentage_upload.toFixed(0) + "% of the " + expected_upload + "Mbps I'm paying for.")
     }
 });
 
