@@ -4,6 +4,8 @@ So, I was tired of my ISP charging me for 200Mbps and providing one-tenth of tha
 
 I figure I should let them know in a programmatic manner.
 
+![Screenshot of me calling @virginmedia out for providing 9% of what I pay for](https://raw.githubusercontent.com/matthewbaggett/speedtest-bitcher/master/screenshot.png "Screenshot of me calling @virginmedia out for providing 9% of what I pay for")
+
 ### Usage
 
 Simply create a file called `docker-compose.yml` and fill it as so:
