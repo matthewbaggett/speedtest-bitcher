@@ -19,6 +19,7 @@ var twitterClient = new Twitter({
 });
 
 var send_tweet = function(status){
+    console.log("Sending tweet...");
     twitterClient.post('statuses/update', {status: status},  function(error, tweet, response) {
         if(error) throw error;
         console.log("Sent tweet.");
